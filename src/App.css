@@ -1,0 +1,48 @@
+.icon{
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.sidenavbar-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.header-container{
+    position: fixed;
+    top: 0;
+    left: 120px;
+    z-index: 2;
+    width: calc(100% - 120px);
+    background-color: #fff;
+}
+
+.main-container{
+    margin-left: 120px;
+    margin-top: 80px;
+    z-index: 1;
+}
+
+.empList-search-inp > input{
+    outline: none;
+}
+
+.EmpList-table > thead > tr{
+    background-color: #e8e8e8;
+}
+
+.EmpList-table thead > tr,
+.EmpList-table tbody > tr{
+    font-size: 12px;
+}
+
+.userIcon{
+    height: 28px;
+    width: 28px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 4px;
+}
