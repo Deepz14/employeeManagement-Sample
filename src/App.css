@@ -4,6 +4,17 @@
     cursor: pointer;
 }
 
+.icon-sidenav{
+    height: 14px;
+    width: 14px;
+    cursor: pointer;
+}
+.userIcon-sidenav{
+    height: 37px;
+    width: 37px;
+    cursor: pointer;
+}
+
 .sidenavbar-container{
     position: fixed;
     top: 0;
@@ -14,16 +25,30 @@
 .header-container{
     position: fixed;
     top: 0;
-    left: 120px;
+    left: 90px;
     z-index: 2;
-    width: calc(100% - 120px);
+    width: calc(100% - 90px);
     background-color: #fff;
 }
 
 .main-container{
-    margin-left: 120px;
+    margin-left: 70px;
     margin-top: 80px;
     z-index: 1;
+}
+
+.sidenav-list{
+    height: 375px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.sidenav-list:hover{
+    overflow-y: scroll;
+}
+
+.sidenav-list div{
+    width: 50px;
 }
 
 .empList-search-inp > input{
@@ -46,3 +71,49 @@
     display: inline-block;
     margin-right: 4px;
 }
+
+/* ----------- Scrollbar CSS ------------ */
+.EmployeeDirectory-card::-webkit-scrollbar {
+    width: 1px;
+    height: 5px;               /* width of the entire scrollbar */
+}
+  
+.EmployeeDirectory-card::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+}
+  
+.EmployeeDirectory-card::-webkit-scrollbar-thumb {
+    background-color: rgb(173, 181, 189);    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+    /*border: 3px solid orange;  /* creates padding around scroll thumb */
+}
+
+.sidenav-list::-webkit-scrollbar {
+    width: 2px;
+    height: 5px;               /* width of the entire scrollbar */
+}
+  
+.sidenav-list::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+}
+  
+.sidenav-list::-webkit-scrollbar-thumb {
+    background-color: rgb(173, 181, 189);    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+    /*border: 3px solid orange;  /* creates padding around scroll thumb */
+}
+
+/* ---------- End Scrollbar CSS --------*/
+
+@media (max-width: 576px) { 
+    .EmployeeDirectory-card{
+      overflow-x: scroll !important;
+    }
+}
+
+@media (max-width: 768px) { 
+    .EmployeeDirectory-card{
+        overflow-x: scroll !important;
+    }
+}
+
